@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	dayOne "github.com/todd5913/advent2020/dayOne"
+	dayTwo "github.com/todd5913/advent2020/dayTwo"
 )
 
 func main() {
@@ -15,6 +16,8 @@ func main() {
 	switch dayChoice {
 	case "1":
 		dayOne.Problem1()
+	case "2":
+		dayTwo.CorrectPasswords()
 	default:
 		fmt.Println("That day doesn't exist yet")
 	}

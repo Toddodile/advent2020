@@ -49,10 +49,12 @@ func readInts(r io.Reader) ([]int, error) {
 }
 
 func productOfSums(values []int, sumTarget int) string {
-	for i := 0; i < len(values)-1; i++ {
-		for j := i + 1; j < len(values); j++ {
-			if values[i]+values[j] == sumTarget {
-				return strconv.Itoa(values[i] * values[j])
+	for i := 0; i < len(values)-2; i++ {
+		for j := i + 1; j < len(values)-1; j++ {
+			for k := j + 1; k < len(values); k++ {
+				if values[i]+values[j]+values[k] == sumTarget {
+					return strconv.Itoa(values[i] * values[j] * values[k])
+				}
 			}
 		}
 	}
