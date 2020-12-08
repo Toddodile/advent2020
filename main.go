@@ -6,6 +6,7 @@ import (
 	dayFive "github.com/todd5913/advent2020/dayFive"
 	dayFour "github.com/todd5913/advent2020/dayFour"
 	dayOne "github.com/todd5913/advent2020/dayOne"
+	daySix "github.com/todd5913/advent2020/daySix"
 	dayThree "github.com/todd5913/advent2020/dayThree"
 	dayTwo "github.com/todd5913/advent2020/dayTwo"
 )
@@ -15,7 +16,7 @@ func main() {
 
 	var dayChoice string
 	//fmt.Scan(&dayChoice)
-	dayChoice = "5"
+	dayChoice = "6"
 
 	switch dayChoice {
 	case "1":
@@ -28,6 +29,8 @@ func main() {
 		dayFour.ScanPasswords()
 	case "5":
 		dayFive.ScanPasses()
+	case "6":
+		daySix.TrueFalseCounting()
 	default:
 		fmt.Println("That day doesn't exist yet")
 	}
