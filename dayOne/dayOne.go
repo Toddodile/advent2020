@@ -9,15 +9,8 @@ import (
 )
 
 func Problem1() {
-	fmt.Println("Path to expense report: ")
 
-	var reportPath string
-
-	fmt.Scan(&reportPath)
-	if reportPath == "" {
-		fmt.Println("Report path cannot be empty")
-		os.Exit(1)
-	}
+	reportPath := "report.txt"
 
 	if _, err := os.Stat(reportPath); err != nil {
 		fmt.Println("Report file specified does not exist")
