@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	dayFive "github.com/todd5913/advent2020/dayFive"
 	dayFour "github.com/todd5913/advent2020/dayFour"
 	dayOne "github.com/todd5913/advent2020/dayOne"
 	dayThree "github.com/todd5913/advent2020/dayThree"
@@ -14,7 +15,7 @@ func main() {
 
 	var dayChoice string
 	//fmt.Scan(&dayChoice)
-	dayChoice = "4"
+	dayChoice = "5"
 
 	switch dayChoice {
 	case "1":
@@ -25,6 +26,8 @@ func main() {
 		dayThree.Navigate()
 	case "4":
 		dayFour.ScanPasswords()
+	case "5":
+		dayFive.ScanPasses()
 	default:
 		fmt.Println("That day doesn't exist yet")
 	}
